@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - Freedman</title>
+  <title>Privacy Policy - StudioMemory Pro</title>
   <style>
     html, body {
       margin: 0;
@@ -13,16 +13,14 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100svh;
-      /* Same animated gradient as home */
+      line-height: 1.6;
+      /* Match the home page animated gradient */
       background: linear-gradient(-45deg, #000000, #1a1a40, #0f2027, #2c5364);
       background-size: 400% 400%;
       animation: gradientShift 15s ease infinite;
+      overflow-y: auto;
     }
 
     @keyframes gradientShift {
@@ -31,64 +29,130 @@
       100% { background-position: 0% 50%; }
     }
 
-    .container {
+    .content-wrapper {
       max-width: 800px;
-      padding: 4rem 2rem;
-      text-align: left;
-      line-height: 1.6;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
     }
 
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 2rem;
-      text-align: center;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .last-updated {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     h2 {
-      margin-top: 2rem;
-      font-size: 1.5rem;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
-      padding-bottom: 0.5rem;
+      font-size: 1.4rem;
+      margin-top: 0;
+      color: #007aff; /* Apple Blue accent */
     }
 
-    p {
-      color: rgba(255,255,255,0.9);
-      margin-bottom: 1rem;
+    p, li {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1rem;
     }
 
-    .back-link {
+    ul {
+      padding-left: 20px;
+    }
+
+    .back-btn {
       display: inline-block;
-      margin-top: 3rem;
-      color: #ffffff;
+      margin-bottom: 20px;
+      color: #007aff;
       text-decoration: none;
-      opacity: 0.6;
-      transition: opacity 0.2s;
+      font-weight: 500;
     }
 
-    .back-link:hover {
-      opacity: 1;
+    .contact-email {
+      color: #007aff;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.8rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <a href="index.html" class="back-link">← Back to Home</a>
+
+  <div class="content-wrapper">
+    <a href="index.html" class="back-btn">← Back to Home</a>
     
-    <h1>Privacy Policy</h1>
-    <p><strong>Last Updated: February 19, 2026</strong></p>
+    <header>
+      <h1>StudioMemory™ Pro</h1>
+      <p class="last-updated">Last Updated: February 29, 2026</p>
+      <p>Developer: Brad Freedman<br>
+      Contact: <a href="mailto:freewolfsoftware@gmail.com" class="contact-email">freewolfsoftware@gmail.com</a></p>
+    </header>
 
-    <p>Freedman is committed to protecting your privacy. This policy outlines how we handle data in our application.</p>
+    <section>
+      <h2>Summary</h2>
+      <p>We designed the StudioMemory Pro app to work without collecting personal information. This privacy policy explains how and why we handle personal information in connection with the StudioMemory Pro app installed on iOS and macOS devices.</p>
+    </section>
 
-    <h2>Data Collection</h2>
-    <p>Freedman does not collect, store, or transmit any personal information. All data processed by the app stays locally on your device.</p>
+    <section>
+      <h2>No Data Collection Through App</h2>
+      <p>StudioMemory Pro does not collect users’ personal information in the normal course of use. You may use StudioMemory Pro without an account. StudioMemory Pro does not run advertising or analytics.</p>
+    </section>
 
-    <h2>Third-Party Services</h2>
-    <p>The app does not use third-party tracking or analytics services.</p>
+    <section>
+      <h2>Paid Licenses</h2>
+      <p>Transactions are processed by Apple through the App Store. Apple may collect and use personal information to process payments and prevent fraud.</p>
+      <ul>
+        <li>We do not receive your payment details (e.g., credit card number).</li>
+        <li>We may receive limited subscription-related signals to unlock features.</li>
+        <li>Your subscription is managed in your Apple ID settings.</li>
+      </ul>
+    </section>
 
-    <h2>Contact</h2>
-    <p>If you have any questions, please contact us through our GitHub repository.</p>
+    <section>
+      <h2>Support Communications</h2>
+      <p>If you contact us via email, you may voluntarily share your email, name, and diagnostic info. We use this only to troubleshoot and improve support. We do not use this for marketing.</p>
+    </section>
 
-    <a href="index.html" class="back-link">Return to Home</a>
+    <section>
+      <h2>Sharing & Retention</h2>
+      <p><strong>Sharing:</strong> We do not sell personal information. We only share data if required by law or to protect our users.</p>
+      <p><strong>Retention:</strong> We keep support records only as long as necessary. We are located and store information in Vancouver, Canada.</p>
+    </section>
+
+    <section>
+      <h2>Your Rights & Security</h2>
+      <p>You can request deletion of your support correspondence by emailing us. While we take reasonable steps to protect your data, no transmission is 100% secure.</p>
+    </section>
+
+    <section>
+      <h2>Children’s Privacy</h2>
+      <p>StudioMemory Pro is not directed to children under 18, and we do not knowingly collect information from them.</p>
+    </section>
+
+    <footer>
+      &copy; 2026 Brad Freedman. All rights reserved.
+    </footer>
   </div>
+
 </body>
 </html>
