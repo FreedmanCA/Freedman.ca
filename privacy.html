@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Freedman</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100svh;
+      /* Same animated gradient as home */
+      background: linear-gradient(-45deg, #000000, #1a1a40, #0f2027, #2c5364);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 4rem 2rem;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 0.5rem;
+    }
+
+    p {
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 1rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 3rem;
+      color: #ffffff;
+      text-decoration: none;
+      opacity: 0.6;
+      transition: opacity 0.2s;
+    }
+
+    .back-link:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Home</a>
+    
+    <h1>Privacy Policy</h1>
+    <p><strong>Last Updated: February 19, 2026</strong></p>
+
+    <p>Freedman is committed to protecting your privacy. This policy outlines how we handle data in our application.</p>
+
+    <h2>Data Collection</h2>
+    <p>Freedman does not collect, store, or transmit any personal information. All data processed by the app stays locally on your device.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>The app does not use third-party tracking or analytics services.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions, please contact us through our GitHub repository.</p>
+
+    <a href="index.html" class="back-link">Return to Home</a>
+  </div>
+</body>
+</html>
